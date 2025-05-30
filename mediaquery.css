@@ -1,0 +1,129 @@
+/* media query */
+/* example of desktop first approach */
+/* body {
+  background-color: blue;
+  color: white;
+} */
+
+/* media-query */
+/* max-width */
+
+/* tab */
+/* @media (max-width: 768px) {
+  body {
+    background-color: green;
+  }
+} */
+/* mobile */
+/* @media (max-width: 426px) {
+  body {
+    background-color: brown;
+  }
+} */
+
+/* example of mobile first approach */
+/* min-width */
+
+/* body{
+    background-color: yellow;
+}
+
+@media(min-width:768px){
+    body{
+        background-color: blue;
+        color: white;
+    }
+}
+
+@media(min-width:1024px){
+    body{
+        background-color: purple;
+    }
+} */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 10px;
+}
+ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 16px;
+  /* border: 1px solid red; */
+}
+h2 {
+  display: none;
+}
+/* main */
+main {
+  /* border: 1px solid red; */
+  padding: 6px 10px;
+}
+#section-1 {
+  display: flex;
+  /* border: 1px solid blue; */
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+#tablet,
+#mobile {
+  display: none;
+}
+
+/* #mobile{
+    display: none;
+ } */
+#section-2 {
+  text-align: center;
+}
+footer {
+  display: flex;
+  padding: 10px 16px;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px){
+    #desktop{
+display: none;
+}
+#tablet{
+    display: block;
+}
+    }
+
+@media (max-width: 426px) {
+  ul {
+    display: none;
+  }
+  /* h2 {
+    display: block;
+  } */
+  #section-1 {
+    /* display: flex;  no need because there is another section with that command */
+    flex-direction: column;
+  }
+  /* #desktop{
+    display: none; */
+  }
+  #mobile{
+    display: block;
+  }
+
+  #tablet{
+    display: none;
+  }
+  footer{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+
+
