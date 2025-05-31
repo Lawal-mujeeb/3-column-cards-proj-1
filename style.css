@@ -30,6 +30,7 @@ body{
     flex-wrap: wrap;
     overflow: hidden;
     border-radius: 13px ;
+    
     /* flex-wrap: wrap; */
 }
 .card{
@@ -38,12 +39,14 @@ body{
     display: flex;
     flex-direction: column;
     gap: 40px;
+    justify-content: space-between;
 }
 #sedan{
     background-color: var(--bright-orange);
 }
 #suv{
     background-color: var(--dark-cyan);
+  
 }
 #luxury{
     background-color: var(--very-dark-cyan);
